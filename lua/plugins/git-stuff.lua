@@ -10,5 +10,10 @@ return {
 	},
 	{
 		"tpope/vim-fugitive",
+		config = function()
+			vim.keymap.set("n", "<leader>ga", ":Git add %:p<CR><CR>", {})
+			vim.keymap.set("n", "<leader>gs", ":Git status<CR>", {})
+			vim.keymap.set("n", "<leader>gc", ":Git commit -v -q<CR>", {})
+		end,
 	},
 }
