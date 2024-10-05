@@ -1,3 +1,4 @@
+-- catppuccin
 return {
     "catppuccin/nvim",
     lazy = false,

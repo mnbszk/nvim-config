@@ -4,6 +4,10 @@ vim.g.mapleader = " "
 vim.keymap.set('n', '<C-h>', '<C-w>h')
 vim.keymap.set('n', '<C-l>', '<C-w>l')
 
+-- change buffer
+vim.keymap.set('n', '<C-Left>', ':bprevious<CR>')
+vim.keymap.set('n', '<C-Right>', ':bnext<CR>')
+
 -- save a file
 vim.keymap.set('n', '<leader>w', ':w<CR>')
 

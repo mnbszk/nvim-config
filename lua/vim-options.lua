@@ -12,16 +12,20 @@ vim.cmd("set noswapfile")
 vim.cmd("set nobackup")
 
 -- tab and indent
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=4")
-vim.cmd("set softtabstop=4")
-vim.cmd("set shiftwidth=4")
-vim.cmd("set autoindent")
-vim.cmd("set smartindent")
-
-vim.cmd("set laststatus=2")
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.autoindent = true
+vim.opt.smartindent = true
 
 vim.cmd("set incsearch")
 vim.cmd("set ignorecase")
 vim.cmd("set smartcase")
 vim.cmd("set hlsearch")
+
+vim.opt.showcmd = true
+vim.opt.laststatus = 2
+vim.opt.autowrite = true
+vim.opt.cursorline = true
+vim.opt.autoread = true
