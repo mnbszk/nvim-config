@@ -4,9 +4,13 @@ vim.g.mapleader = " "
 vim.keymap.set('n', '<C-h>', '<C-w>h')
 vim.keymap.set('n', '<C-l>', '<C-w>l')
 
+-- window
+vim.keymap.set('n', '<leader>-', ':split<CR>')
+vim.keymap.set('n', '<leader>\\', ':vsplit<CR>')
+
 -- change buffer
-vim.keymap.set('n', '<C-Left>', ':bprevious<CR>')
-vim.keymap.set('n', '<C-Right>', ':bnext<CR>')
+-- vim.keymap.set('n', '<C-Left>', ':bprevious<CR>')
+-- vim.keymap.set('n', '<C-Right>', ':bnext<CR>')
 
 -- save a file
 vim.keymap.set('n', '<leader>w', ':w<CR>')
